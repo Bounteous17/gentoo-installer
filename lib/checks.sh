@@ -19,4 +19,4 @@ else
 fi
 
 
-colorizeLog "info" "System dependeces satisfied"; echo ""
+colorizeLog "info" "System dependeces satisfied\n\nInstaller debug is set to $DEBUG"; echo ""

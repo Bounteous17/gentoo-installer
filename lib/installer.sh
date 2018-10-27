@@ -1,4 +1,4 @@
-simpleTitle "info" "Gentoo Unofficial Installer" "Welcome to the fast Gentoo installer\nIf it moves, compile it"
+simpleTitle "info" "Gentoo Unofficial Installer - $VERSION" "Welcome to the fast Gentoo installer\nIf it moves, compile it"
 
 createIfacesOptions; simpleOptions "Network Setup" "Select interface to configure" "$IFACES_OPTIONS"
 

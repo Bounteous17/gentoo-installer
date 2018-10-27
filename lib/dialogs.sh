@@ -15,5 +15,9 @@ simpleOptions() {
 	message=$2
 	title=$1
 	options=$3
+	if [ "$DEBUG" = true ]; then
+		options+=" 0 Skip"
+		colorizeLog "dbg" "$options"
+	fi
 	dialog --backtitle "$title" --menu "$message" 15 40 4 $options
 }

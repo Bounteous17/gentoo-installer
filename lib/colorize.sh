@@ -13,10 +13,13 @@ colorizeLog() {
 	elif [ "$textColor" == "warn" ]; then
 		textOut=11
 		textData="[!] Warning: $2"
+	elif [ "$textColor" == "dbg" ]; then
+		textOut=8
+		textData="[D] Debug: $2"
 	else
 		echo "Syntax error: Missing color output :("
 		exit 1
 	fi
 	
-	echo "$(tput setaf $textOut) $textData $(tput sgr 0)"
+	echo -e "$(tput setaf $textOut) $textData $(tput sgr 0)"
 }

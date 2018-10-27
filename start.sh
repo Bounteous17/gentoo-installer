@@ -10,6 +10,7 @@
 ####################################################################
 
 VERSION="v0.0"
+DEBUG=true
 
 #COLOR OUT
 . ./lib/colorize.sh
@@ -18,6 +19,7 @@ VERSION="v0.0"
 #CREATE MENUS
 . ./lib/dialogs.sh
 
+. ./utils/main.sh
 read -p "Press enter to continue: "
 
 #START INSTALL

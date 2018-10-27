@@ -1,0 +1,3 @@
+optionsConfig() {
+	echo "tt"
+}
