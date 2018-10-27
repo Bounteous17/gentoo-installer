@@ -12,5 +12,4 @@ createCpuOptions() {
 	done
 
 	CPU_CORES_OPTIONS="${OPTIONS[@]}"
-	echo $CPU_CORES_OPTIONS
 }

@@ -21,5 +21,6 @@ VERSION="v0.0"
 read -p "Press enter to continue: "
 
 #START INSTALL
-. ./installer/*
+. ./installer/net.sh
+. ./installer/cpu.sh
 . ./lib/installer.sh
