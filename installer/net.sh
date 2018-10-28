@@ -7,5 +7,10 @@ createIfacesOptions() {
 		OPTIONS+=("$COUNTER $iface")
 	done
 	IFACES_OPTIONS="${OPTIONS[@]}"
-	echo "$IFACES_OPTIONS"
+}
+
+ifaceSetupMethod() {
+	IFACES_METHOD=()
+	IFACES_METHOD+=("1 Manual-network-configuration 2 Using-DHCP")
+	IFACES_SETUP_MODE="${IFACES_METHOD[@]}"
 }
